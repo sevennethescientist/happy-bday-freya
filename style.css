@@ -1,0 +1,152 @@
+:root {
+    --outer-card-mw: 1000px;
+    --outer-card-mh: 500px;
+}
+
+body{
+	margin:0 auto;
+	background:rgb(204, 28, 54);
+}
+
+.site-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-outer-body {
+    width: auto;
+    margin: 20px;
+    border: 100px dashed white;
+    /* border-radius: 25px; */
+    align-content: center;
+    padding: 10px;
+    border-image: url('./assets/lace.png') 14% 20% round;   
+}
+
+.card-inner-body {
+    width: auto;
+    height: auto;
+    border: 2px dashed white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./assets/heart_overlay.PNG");
+    background-size: 100%;
+    background-position: center;
+    padding: 30px; 
+}
+
+.left-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dante-img {
+    width: 300px;
+    height: auto;
+    filter: drop-shadow(0px 0px 20px rgba(248, 247, 248, 0.5));
+}
+
+
+#left-caption {
+    font-size: 20px;
+    font-family: "Delius", cursive;
+    color: white;
+}
+
+.right-wrapper {
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.birthday-label{
+    color: white;
+    font-family: "Chango", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-text-stroke: 1px rgb(157, 0, 63);
+}
+
+.heart-message-wrapper-wrapper-lol {
+    position: relative;
+    background-color: purple;   
+}
+
+.heart-message-wrapper {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    max-height: 200px;
+}
+
+.heart-message-image {
+    width: auto;
+    height: auto;
+    max-height: 250px;
+}
+
+.heart-message-text {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+    font-family: "Delius", cursive;
+    color: white;
+}
+
+.code-label {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    font-family: "Delius", cursive;
+    top: 55%;
+    left: 50%;
+}
+
+.code-container {
+  padding: 24px 16px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.scratch-container {
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  border: 2px dashed white;
+}
+
+.scratch-card {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.code{
+    color: white;
+    font-size: 16px;
+    font-family: "Delius", cursive;
+    text-align: center;
+}
+
+canvas {
+  position: absolute;
+  cursor: grabbing;
+}
+
