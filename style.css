@@ -22,7 +22,7 @@ body{
     border: 100px dashed white;
     align-content: center;
     padding: 10px;
-    border-image: url('./assets/lace.png') 14% 20% round;  
+    border-image: url('./assets/lace.PNG') 14% 20% round;  
  
 }
 
@@ -115,7 +115,7 @@ body{
         border: 20px dashed white;
         align-content: center;
         padding: 10px;
-        border-image: url('./assets/lace.png') 7% 9% round;  
+        border-image: url('/assets/lace.PNG') 7% 9% round;  
     }
 
     .card-inner-body {
