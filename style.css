@@ -127,7 +127,7 @@ body{
         align-items: center;
         justify-content: center;
         background-image: url("./assets/heart_overlay.PNG");
-        background-size: 100%;
+        background-size: 300%;
         background-position: center;
         padding: 30px; 
     }
