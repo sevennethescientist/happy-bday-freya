@@ -9,7 +9,8 @@ body{
 }
 
 #container {
-    display: none;
+    display: none; /* ! RETURN TO DISPLAY: NONE LATER*/
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -19,10 +20,10 @@ body{
     width: auto;
     margin: 20px;
     border: 100px dashed white;
-    /* border-radius: 25px; */
     align-content: center;
     padding: 10px;
-    border-image: url('./assets/lace.png') 14% 20% round;   
+    border-image: url('./assets/lace.png') 14% 20% round;  
+ 
 }
 
 .card-inner-body {
@@ -30,6 +31,7 @@ body{
     height: auto;
     border: 2px dashed white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     background-image: url("./assets/heart_overlay.PNG");
@@ -56,6 +58,7 @@ body{
     font-size: 20px;
     font-family: "Delius", cursive;
     color: white;
+    text-align: center;
 }
 
 .right-wrapper {
@@ -70,6 +73,7 @@ body{
     font-family: "Chango", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
     -webkit-text-stroke: 1px rgb(157, 0, 63);
 }
 
@@ -103,6 +107,55 @@ body{
     color: white;
 }
 
+@media (max-width: 600px) {
+
+    .card-outer-body {
+        width: 70%;
+        margin: 10px;
+        border: 20px dashed white;
+        align-content: center;
+        padding: 10px;
+        border-image: url('./assets/lace.png') 7% 9% round;  
+    }
+
+    .card-inner-body {
+        width: auto;
+        height: auto;
+        border: 2px dashed white;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-image: url("./assets/heart_overlay.PNG");
+        background-size: 100%;
+        background-position: center;
+        padding: 30px; 
+    }
+
+    .dante-img {
+        width: 95%;
+        height: auto;
+        filter: drop-shadow(0px 0px 20px rgba(248, 247, 248, 0.5));
+    }
+
+    .heart-message-image {
+        width: 90%;
+        height: auto;
+        max-height: 250px;
+    }
+
+    .heart-message-text {
+        position: absolute;
+        width: 60%;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 18px;
+        font-family: "Delius", cursive;
+        color: white;
+    }
+}
+
 .code-label {
     text-align: center;
     color: white;
@@ -120,7 +173,7 @@ body{
 }
 
 .scratch-container {
-  width: 300px;
+  width: 250px;
   height: 70px;
   border-radius: 10px;
   overflow: hidden;
@@ -151,10 +204,13 @@ canvas {
 }
         
 #loginForm {
-    background-color: #f9f9f9;
     padding: 30px;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
 }
 
 
